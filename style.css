@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --darkCyan: hsl(185, 75%, 39%);
+  --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --DarkGrayishBlue: hsl(227, 10%, 46%);
+  --DarkGray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: grid;
+  place-items: center;
+  position: relative;
+  height: 100vh;
+  z-index: -3;
+  overflow: hidden;
+  background-color: #1ba1ad;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.backgroundImageTop {
+  position: absolute;
+  z-index: -1;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translate(-48%, -36%);
+  size: auto;
+}
+
+.backgroundImageBottom {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  top: 42%;
+  left: 50%;
+  z-index: -1;
+}
+
+.profileCard {
+  position: relative;
+  background-color: #fff;
+  width: 28.75rem;
+  height: 31.25rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.backgroundCard {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  position: static;
+}
+
+.imgAvatar {
+  position: absolute;
+  margin-top: 6.875rem;
+  width: 8.125rem;
+  border-radius: 50%;
+  border: 10px solid #fff;
+}
+
+.personal {
+  margin-top: 5.625rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.name {
+  color: #222126;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.age {
+  color: #222126c0;
+  font-size: 1.375rem;
+}
+
+.city {
+  margin-top: 0.938rem;
+  font-size: 1.188rem;
+  color: #222126c0;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2.5rem;
+  padding: 1.563rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+.follow,
+.likes,
+.photos {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.follow .number,
+.likes .number,
+.photos .number {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222126f5;
+}
+
+.follow p,
+.likes p,
+.photos p {
+  color: #222126c0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 460px) {
+    .profileCard {
+        width: 90%;
+        height: 64%;
+    }
+
+    .imgAvatar {
+        position: absolute;
+        margin-top: 24%;
+        width: 6.25em;
+    }
+
+    .nameAgeAndCity {
+        margin-top: 3.75em;
+        gap: 0.938em;
+    }
+
+    .nameAgeAndCity .name,
+    .nameAgeAndCity .age {
+        font-size: 1.25em;
+    }
+
+    .city {
+        margin-top: 0.938em;
+        font-size: 1.125em;
+    }
+
+    .follow .number,
+    .likes .number,
+    .photos .number {
+        font-size: 1.125em;
+    }
+
+    .follow p,
+    .likes p,
+    .photos p {
+        font-size: 0.938em;
+    }
+}
