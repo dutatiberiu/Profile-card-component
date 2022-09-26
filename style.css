@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-
+/*colors*/
 :root {
   --darkCyan: hsl(185, 75%, 39%);
   --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
@@ -134,6 +134,8 @@
   text-align: center;
 }
 
+
+/* Media Querie*/
 @media (max-width: 460px) {
     .profileCard {
         width: 90%;
